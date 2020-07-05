@@ -7,10 +7,15 @@ namespace Aula31Whatzap
     {
         static void Main(string[] args)
         {
+          
            Mensagem mens = new Mensagem();
            Agenda agenda = new Agenda();
            Contato c1 = new Contato();
            c1.Nome = "Julia";
+           c1.Nome = "Roberto";
+           c1.Nome = "joao";
+           c1.Nome = "Maria";
+           c1.Nome = "Marcos";
            c1.Telefone = "00041598";
 
         //    agenda.Cadastrar(c1);
