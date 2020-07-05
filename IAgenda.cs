@@ -1,9 +1,11 @@
+using System.Collections.Generic;
+
 namespace Aula31Whatzap
 {
     public interface IAgenda
     {
-         void cadastrar();
-         void Excluir();
-         void Listar();
+         void Cadastrar(Contato cont);
+         void Excluir(string _termo);
+         List<Contato> Listar();
     }
 }

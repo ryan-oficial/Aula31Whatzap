@@ -1,0 +1,11 @@
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\obj\Debug\netcoreapp3.1\Aula31Whatzap.csprojAssemblyReference.cache
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\obj\Debug\netcoreapp3.1\Aula31Whatzap.AssemblyInfoInputs.cache
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\obj\Debug\netcoreapp3.1\Aula31Whatzap.AssemblyInfo.cs
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\bin\Debug\netcoreapp3.1\Aula31Whatzap.exe
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\bin\Debug\netcoreapp3.1\Aula31Whatzap.deps.json
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\bin\Debug\netcoreapp3.1\Aula31Whatzap.runtimeconfig.json
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\bin\Debug\netcoreapp3.1\Aula31Whatzap.runtimeconfig.dev.json
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\bin\Debug\netcoreapp3.1\Aula31Whatzap.dll
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\bin\Debug\netcoreapp3.1\Aula31Whatzap.pdb
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\obj\Debug\netcoreapp3.1\Aula31Whatzap.dll
+C:\Users\CasadoNotebook\Desktop\PrimeiroPOO\Aula31Whatzap\obj\Debug\netcoreapp3.1\Aula31Whatzap.pdb
