@@ -7,13 +7,18 @@ namespace Aula31Whatzap
 {
     public class Agenda : IAgenda
     {
-    
+        /// <summary>
+        ///  Atributos de apoio
+        /// </summary>
+        /// <value></value>
         public List<Contato> Contatos { get; set; }
         public Contato Telefone { get; set; }
-
         List<Contato> contato = new List<Contato>();
         private const string PATH = "Database/produto.csv";
-
+        
+        /// <summary>
+        /// Cria um diretorio
+        /// </summary>
         public Agenda(){
             if (!File.Exists(PATH)){
                 Directory.CreateDirectory("Database");
@@ -21,12 +26,20 @@ namespace Aula31Whatzap
             }
         }
 
+        /// <summary>
+        /// Cadastra um novo contato
+        /// </summary>
+        /// <param name="Contatos">Os Contatos</param>
         public void Cadastrar(Contato Contatos)
         {
             string[] linha = new string[] {PrepararLinha(Contatos)};
             File.AppendAllLines(PATH, linha);
         }
 
+        /// <summary>
+        /// Apaga um dos contatos
+        /// </summary>
+        /// <param name="_termo">O contato que vai ser apagado</param>
         public void Excluir(string _termo)
         {
             List<string> linhas = new List<string>();
@@ -37,9 +50,14 @@ namespace Aula31Whatzap
                     linhas.Add(linha);
                 }
             }
-            linhas.Remove(_termo);
+            linhas.RemoveAll(z => z.Contains(_termo));
         }
 
+
+        /// <summary>
+        /// Lista em ordem alfabetica os nomes dos contatos
+        /// </summary>
+        /// <returns>Retorna em ordem</returns>
         public List<Contato> Listar()
         {
             List<Contato> lista = new List<Contato>();
@@ -60,10 +78,20 @@ namespace Aula31Whatzap
             return lista;
            
         }
+        /// <summary>
+        /// Separa os dados
+        /// </summary>
+        /// <param name="dado"></param>
+        /// <returns>Retorna com o split</returns>
         public string Separar(string dado){
             return dado.Split("=")[1];
         }
 
+        /// <summary>
+        /// Molde da linha para o csv
+        /// </summary>
+        /// <param name="cont">O contato que vai pro csv</param>
+        /// <returns>O molde preenchido com o nome o numero do contato</returns>
         private string PrepararLinha(Contato cont){
             return $"Nome={cont.Nome}-Telefone={cont.Telefone}";
         }

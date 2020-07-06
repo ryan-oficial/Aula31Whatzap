@@ -11,15 +11,17 @@ namespace Aula31Whatzap
            Mensagem mens = new Mensagem();
            Agenda agenda = new Agenda();
            Contato c1 = new Contato();
-           c1.Nome = "Julia";
-           c1.Nome = "Roberto";
-           c1.Nome = "joao";
-           c1.Nome = "Maria";
+        //    c1.Nome = "Julia";
+        //    c1.Nome = "Roberto";
+        //    c1.Nome = "joao";
+        //    c1.Nome = "Maria";
            c1.Nome = "Marcos";
            c1.Telefone = "00041598";
 
-        //    agenda.Cadastrar(c1);
+           agenda.Cadastrar(c1);
 
+            //Não esta funcionando o excluir
+           agenda.Excluir("Marcos");
 
 
            System.Console.WriteLine("Sua lista de contatos:");
@@ -30,7 +32,7 @@ namespace Aula31Whatzap
                System.Console.WriteLine($"Telefone: {item.Telefone} Nome: {item.Nome}");
            }
           
-           mens.Enviar(c1);
+        //    mens.Enviar(c1);
 
            
         }
