@@ -6,21 +6,16 @@ namespace Aula31Whatzap
     {
         public string Texto { get; set; }
         public string Destinatario { get; set; }
-        public Contato contato { get; set;}
 
         
 
         public void Enviar(Contato cont){
             System.Console.WriteLine("Pra quem voce deseja escrever?");
             Destinatario = Console.ReadLine();
-            if(Destinatario == cont.Nome ){
             System.Console.WriteLine("Escreva sua mensagem:");
             Texto = Console.ReadLine();
             System.Console.WriteLine($"\nMensagem enviada para: {Destinatario}\nMensagem enviada: {Texto}");
-            }else{
-                System.Console.WriteLine("Voce nao tem esse contato");
-
-            }
+           
          }
 
         

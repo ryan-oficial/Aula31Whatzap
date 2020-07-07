@@ -51,6 +51,16 @@ namespace Aula31Whatzap
                 }
             }
             linhas.RemoveAll(z => z.Contains(_termo));
+
+            ReescreverCSV(linhas);
+        }
+        private void ReescreverCSV(List<string> lines){
+            using(StreamWriter output = new StreamWriter(PATH)){
+                foreach(string ln in lines){
+                    output.Write(ln+"\n");
+                }
+
+            }
         }
 
 

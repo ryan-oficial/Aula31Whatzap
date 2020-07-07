@@ -20,7 +20,6 @@ namespace Aula31Whatzap
 
            agenda.Cadastrar(c1);
 
-            //Não esta funcionando o excluir
            agenda.Excluir("Marcos");
 
 
@@ -32,7 +31,7 @@ namespace Aula31Whatzap
                System.Console.WriteLine($"Telefone: {item.Telefone} Nome: {item.Nome}");
            }
           
-        //    mens.Enviar(c1);
+           mens.Enviar(c1);
 
            
         }
